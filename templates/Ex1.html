@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Example-1</title>
+    <style>
+        body
+        {
+            background-color: aqua;
+            color: rgb(234, 47, 47);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>This is example form</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="fs">First name</label>
+            <input type="text" name="fs" id="fs">
+            <br></br>
+            <label for="ls">Last name</label>
+            <input type="text" name="ls" id="ls">
+            <br></br>
+            <label for="">Password</label>
+            <input type="password" name="pws" id="pws">
+            <br></br>
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+</body>
+</html>
